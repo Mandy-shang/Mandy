@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<!--this html for week 5 homework.-->
+
+<title>Week 5 assignment</title>
+ 
+<head>
+<h1>Middle School in Tampa area</h1>
+
+<link rel="stylesheet" href="css/style5.css">
+
+</head>
+
+<body>
+
+
+
+<!--add information and loge of williams middle magnet school-->
+   <a href="https://www.hillsboroughschools.org/williams" target="_blank">
+       <img src="images/williams.png" alt="Williams Middle Magnet School" style="width:350px;">
+   </a>
+
+<br>
+<button onclick="myFunction1()">Click me</button>
+<p id="demo1"></p>
+</br>
+
+<script>
+
+   function myFunction1() {
+   document.getElementById("demo1").innerHTML = "Rating score 9 out of 10, located at 5020 North 47th Stree, Tampa, FL 33610. More information click on the logo to link to school homepage." ;
+}
+</script>
+
+
+<!--add information and logo of roland park k-8 magnet school-->
+
+<a href="https://www.hillsboroughschools.org/rolandpark" target="_blank">
+       <img src="images/roland.png" alt="Roland Park K-8 Magnet School" style="width:350px;">
+   </a>
+
+<br>
+<button onclick="myFunction2()">Click me</button>
+<p id="demo2"></p>
+</br>
+
+<script>
+
+   function myFunction2() {
+   document.getElementById("demo2").innerHTML = "Rating score 9 out of 10, located at 1510 North Manhattan Avenue, Tampa, FL 33607. More information click on the logo to link to school homepage." ;
+}
+</script>
+
+
+<!--add information and logo of coleman middle school.-->
+<a href="https://www.hillsboroughschools.org/coleman" target="_blank">
+       <img src="images/coleman.png" alt="Coleman Middle School" style="width:350px;">
+   </a>
+
+<br>
+<button onclick="myFunction3()">Click me</button>
+<p id="demo3"></p>
+</br>
+
+<script>
+
+   function myFunction3() {
+   document.getElementById("demo3").innerHTML = "Rating score 9 out of 10, located at 1724 South Manhattan Avenue, Tampa, FL 33629. More information click on the logo to link to school homepage." ;
+}
+</script>
+
+<!--collect demographic-->
+/* modify the code for w3school*/
+
+<h2> Please fill the student information below </h2>
+
+<div>
+  <Form NAME="Survey" METHOD="post" ACTION="http://www.tipjar.com/bin/generic?Subject=TJGFH+TEST&mailto=ERX">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your last name..">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+  <label for="age">Student Age</label>
+  <input type="text" id="age" age="studentage" placeholder="Student's age..">
+
+  <label for="gender">Gender</label>
+  <select id="gender" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    </select>
+
+  <label for="upcominggrade">Upcoming Grade</label>
+  <select id="upcominggrade" name="upcominggrade">
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+  </select>
+
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+<h2>Need help or have any questions? Contact by Email</h2>
+
+<a href="mailto:mickey10010850@gmail.com">Send mail</a>
+
+
+</body>
+</html>

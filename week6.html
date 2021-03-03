@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<title>Week6 assignment</title>
+
+<head>
+<link rel="stylesheet" href="css/style6.css">
+<div class="header">
+<h1>Florida Math Standards for Grade1 </h1>
+</div>
+ <script type="text/javascript">
+
+/* global variable and objet */
+
+/* add contents of operations and algebraic thinking standards */
+   var OA ={
+              cluster1:"MAFS.1.OA.1: Represent and solve problems involving addition and subtraction. (Major Cluster)<br>",
+              cluster2:"MAFS.1.OA.2: Understand and apply properties of operations and the relationship between addition and subtraction<br>",
+              cluster3:"MAFS.1.OA.3: Add and subtract within 20.<br>",
+              cluster4:"MAFS.1.OA.4: Work with addition and subtraction equations.<br>",
+
+              write_clusters: function ()
+              {
+                var clusterOA = this.cluster1+ this.cluster2+ this.cluster3+ this.cluster4;
+                document.getElementById("clusterOA").innerHTML = clusterOA;
+              }
+           }
+ 
+
+
+/* add contents of number and operations in base ten standards */
+  var NBT ={
+              cluster1:"MAFS.1.NBT.1: Extend the counting squence. (Major Cluster)<br>",
+              cluster2:"MAFS.1.NBT.2: Understand place value.<br>",
+              cluster3:"MAFS.1.NBT.3: Use place value understanding and properties of operations to add and subtract.<br>",
+
+              write_clusters: function ()
+              {
+                var clusterNBT = this.cluster1+ this.cluster2+ this.cluster3;
+                document.getElementById("clusterNBT").innerHTML = clusterNBT;
+              }
+           }
+
+  
+/* add contents of measurement and data standards */
+  var MD ={
+              cluster1:"MAFS.1.MD.1: Measure lengths indirectly and by iteration length units. (Major Cluster)<br>",
+              cluster2:"MAFS.1.MD.2: Work with time and money. (Additional Cluster)<br>",
+              cluster3:"MAFS.1.MD.3: Represent and interpret data. (Supporting Cluster)<br>",
+
+              write_clusters: function ()
+              {
+                var clusterMD = this.cluster1+ this.cluster2+ this.cluster3;
+                document.getElementById("clusterMD").innerHTML = clusterMD;
+              }
+           }
+
+/* add contents of geometry standards */
+  var G ={
+              cluster1:"MAFS.1.G.1: Reason with shapers and their atributes. (Additional Cluster)<br>",
+
+              write_clusters: function ()
+              {
+                var clusterG = this.cluster1;
+                document.getElementById("clusterG").innerHTML = clusterG;
+              }
+           }
+
+
+</script>
+
+</head>
+
+<body>
+
+ 
+   
+      
+<div class="text">
+  <div class="container">
+    <div class="center">
+
+  <button type="button" onclick="OA.write_clusters()">Operations and Algebraic Thinking</button>
+  <p id="clusterOA"></p>
+
+  <button type="button" onclick="NBT.write_clusters()">Number and Operations in Base Ten</button>
+  <p id="clusterNBT"></p>
+
+  <button type="button" onclick="MD.write_clusters()">Measurement</button>
+  <p id="clusterMD"></p>
+
+  <button type="button" onclick="G.write_clusters()">Geometry</button>
+  <p id="clusterG"></p>
+
+</div>
+
+
+  
+
+<div class="box">
+  <h2><a href="https://www.cpalms.org/Public/search/Standard">More information click on it</a></h2>
+</div>
+
+
+
+
+
+
+</body>
+</html>

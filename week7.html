@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Week7 Assignment</title>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style7.css">
+  <h1>How much do you know the states?</h1>
+
+<script language="javascript" type="text/javascript">
+
+ /* prompt windows*/
+     var score = prompt("Please enter 1-10 on how much you know states' nickname","");
+     if(score >= 5)
+     {
+       alert("Are you ready for answering the questions?");
+     } else
+     {
+       alert("Let's learn together!");
+     }     
+
+</script>
+
+<script language="javascript" type = "text/javascript">
+
+
+     function state (name, location, population) {
+    
+         this.name = name;
+         this.location = location;
+         this.population = population;
+
+         this.writeState = function ()
+         {
+            var str= "This state name is " + this.name +". " + 
+                     "It is located in " + this.location + " of the United States." +
+                     "The population is " + this.population;
+            writeText (str, "textArea");
+         }
+     };
+         function writeText(txt, destination){
+         document.getElementById(destination).innerHTML=txt;
+         }
+
+/* function to write text out  to hmtl object */
+
+    var state1 = new state("Empire state", "northeastern", "19.4million");
+    var state2 = new state("the golden state", "west coast", "39.37million");
+    var state3 = new state("Sunshine state", "southeastern", "21.47million");
+
+</script>
+
+
+
+
+
+</head>
+
+<body>
+
+  <div class="section1">
+     <div class="button">
+
+
+   <button type="button" onclick="state1.writeState()"> State1 </button>
+
+    <br>
+
+   <button type="button" onclick="state2.writeState()"> State2 </button>
+
+    <br>
+
+   <button type="button" onclick="state3.writeState()"> State3 </button>
+
+    <br>
+
+     <p id= "textArea"></p>
+  </div>
+     </div>
+
+<!--check answers-->
+
+   <div class="section2">
+   <h1>Think about these nicknmaes for the states and try to answer in the blank.</h1>
+  
+
+<!--Check answer for New York-->
+    <script language="javascript" type="text/javascript">
+
+      function myFunction1()
+       {
+        var a=document.getElementById("text_a").value;
+        if (a=="New York")
+       {  
+        document.getElementById("answer1").innerText="You are correct!";
+       }
+        else
+       {
+        document.getElementById("answer1").innerHTML="Try again.";
+       }
+     }
+
+</script>
+
+        <h2>Empire state</h2>
+            <input id="text_a" type="text" />
+            <button onclick = "myFunction1()">Check!</button>
+            <p id="answer1"></p>
+
+
+<!--Check answer for California-->
+    <script language="javascript" type="text/javascript">
+
+      function myFunction2()
+     {
+       var b=document.getElementById("text_b").value;
+       if (b=="California")
+      {
+       document.getElementById("answer2").innerText="You are correct!";
+      }
+       else
+      {
+       document.getElementById("answer2").innerHTML="Try again.";
+       }
+     }
+</script>
+
+         <h2>The golden state</h2>
+             <input id="text_b" type="text"/>
+             <button onclick = "myFunction2()">Check!</button>
+             <p id="answer2"></p>
+
+
+
+
+<!--Check answer for Florida-->
+
+     <script language="javascript" type="text/javascript">
+
+      function myFunction3()
+    {
+      var c=document.getElementById("text_c").value;
+      if (c=="Florida")
+     {
+      document.getElementById("answer3").innerText="You are correct!";
+     }
+      else
+     {
+       document.getElementById("answer3").innerHTML="Try again.";
+     }
+    }
+</script>
+            
+        <h2>Sunshine state</h2>
+            <input id="text_c" type="text"/>
+            <button onclick = "myFunction3()">Check!</button>
+            <p id="answer3"></p>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

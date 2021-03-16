@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Week8 assignment</title>
+<head>
+
+<link rel="stylesheet" type="text/css" href="css/style8.css">
+
+<h1>Choose your favorite topic for next week class! </h1>
+
+
+<script>
+
+/*Add three arrays to add and show each group student names*/
+var studentsnames1 = ["Sally", "Theo", "Roxanne", "Hamzah", "Courtney", "Paige"];
+var studentsnames2 = ["Eugene", "Bruce", "Constance", "Anita", "Maryam", "Nettie"];
+var studentsnames3 = ["Vincent", "Ava", "Zoya", "Barnaby", "Jacqueline", "Rafael"];
+
+
+/* Art group*/
+function showtopic1(){
+    document.getElementById("demo1").innerHTML = "Students in Art group: " + studentsnames1;
+} 
+
+function addArtgroup() {
+    studentsnames1.push(prompt("Enter your name to join in Art group"));
+    showtopic1();
+}
+
+
+/* Math group*/
+function showtopic2(){
+    document.getElementById("demo2").innerHTML = "Students in Math group: " + studentsnames2;
+}
+
+function addMathgroup() {
+    studentsnames2.push(prompt("Enter your name to join in Math group"));
+    showtopic2();
+}
+
+
+/* Sports group*/
+function showtopic3(){
+    document.getElementById("demo3").innerHTML = "Students in Sports group: " + studentsnames3;
+}
+
+function addSportsgroup() {
+    studentsnames3.push(prompt("Enter your name to join in Sports group"));
+    showtopic3();
+}
+
+
+</script>
+
+</head>
+
+<body>
+
+<!--add three images of topics of slections-->
+
+<div class="box">
+ <div class="row">
+   <div class="column">
+     <img src="images/art.jpg" alt="art" style="width:100%;height:250px;">
+       <p style="text-align: center;">Art</p>
+   </div>
+
+   <div class="column">
+     <img src="images/math.jpg" alt="math" style="width:100%;height:250px;">
+       <p style="text-align: center;">Math</p>
+    </div>
+
+   <div class="column">
+     <img src="images/sport.jpg" alt="sport" style="width:100%;height:250px;">
+       <p style="text-align: center;">Sports</p>
+   </div>
+  
+ </div>
+</div>
+
+<h2> Enter your choice to know your teammates </h2>
+
+<!--Add three buttons to show results--> 
+<div class="button">
+  <p><button type="button" onclick="addArtgroup()">Art group</button>
+  </p><p id="demo1"></p>
+  
+  <p><button type="button" onclick="addMathgroup()">Math group</button></p>
+  <p id="demo2"></p>
+  
+  <button type="button" onclick="addSportsgroup()">Sports group</button>
+   <p id="demo3"></p>
+
+</div>
+
+
+ 
+
+
+</body>
+
+
+</html>

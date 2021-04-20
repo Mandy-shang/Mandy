@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Week11 Assignment</title>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style12.css">
+
+
+<div class="image">
+  <div class="hero-text">
+    <h1>Math Addition</h1>
+    <p>Let's get start</p>
+    
+  </div>
+</div>
+
+
+
+  <h2>Click the button below to get the questions.</h2>
+
+<script language="javascript" type="text/javascript">
+
+ /* prompt windows*/
+     var score = prompt("Please enter 1-10 on how much you know states' Math additioin","");
+     if(score >= 5)
+     {
+       alert("Are you ready for answering the questions?");
+     } else
+     {
+       alert("Let's learn together!");
+     }     
+
+</script>
+
+<script language="javascript" type = "text/javascript">
+
+
+     function question (question) {
+    
+         this.question = question;
+         
+
+         this.writeQuestion = function ()
+         {
+            var str= this.question;
+            writeText (str, "textArea");
+         }
+     };
+         function writeText(txt, destination){
+         document.getElementById(destination).innerHTML=txt;
+         }
+
+/* function to write text out  to hmtl object */
+
+    var question1 = new question("Susan has 3 blueberry muffins and 4 chocolate chip cookies. How many muffins and cookies does Susan have altogether?");
+    var question2 = new question("Sally has 8 books. John has 3 more books than Sally. How many books do both children have altogether?");
+    var question3 = new question("Sam bought some fruits. There are 5 apples, 7 oranges, and 6 pears. How many fruits did Sam buy altogether?"); 
+
+
+</script>
+
+
+
+
+
+</head>
+
+<body>
+
+  
+
+
+   <button class="button" onclick="question1.writeQuestion()"> Question 1 </button>
+
+    <br>
+    </br>
+
+   <button class="button" onclick="question2.writeQuestion()"> Question 2 </button>
+
+    <br>
+    </br>
+   <button class="button" onclick="question3.writeQuestion()"> Question 3 </button>
+
+    <br>
+    </br>
+     <p id= "textArea"></p>
+  </div>
+     
+
+<!--check answers-->
+
+   <div class="section2">
+   <h1>Think about these questions and try to answer in the blank.</h1>
+  
+
+<!--Check answer for q1-->
+    <script language="javascript" type="text/javascript">
+
+      function myFunction1()
+       {
+        var a=document.getElementById("text_a").value;
+        if (a=="7")
+       {  
+        document.getElementById("answer1").innerText="You are correct!";
+       }
+        else
+       {
+        document.getElementById("answer1").innerHTML="Try again.";
+       }
+     }
+
+</script>
+
+        <h2>Question1</h2>
+            <input id="text_a" type="text" />
+            <button onclick = "myFunction1()">Check!</button>
+            <p id="answer1"></p>
+
+
+<!--Check answer for q2-->
+    <script language="javascript" type="text/javascript">
+
+      function myFunction2()
+     {
+       var b=document.getElementById("text_b").value;
+       if (b=="19")
+      {
+       document.getElementById("answer2").innerText="You are correct!";
+      }
+       else
+      {
+       document.getElementById("answer2").innerHTML="Try again.";
+       }
+     }
+</script>
+
+         <h2>Question2</h2>
+             <input id="text_b" type="text"/>
+             <button onclick = "myFunction2()">Check!</button>
+             <p id="answer2"></p>
+
+
+
+
+<!--Check answer for q3-->
+
+     <script language="javascript" type="text/javascript">
+
+      function myFunction3()
+    {
+      var c=document.getElementById("text_c").value;
+      if (c=="18")
+     {
+      document.getElementById("answer3").innerText="You are correct!";
+     }
+      else
+     {
+       document.getElementById("answer3").innerHTML="Try again.";
+     }
+    }
+</script>
+            
+        <h2>Question3</h2>
+            <input id="text_c" type="text"/>
+            <button onclick = "myFunction3()">Check!</button>
+            <p id="answer3"></p>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+
+</html>

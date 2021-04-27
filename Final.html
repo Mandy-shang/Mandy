@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+<title>Math addition</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/final.css">
+
+  <script language="javascript" type="text/javascript">
+     
+     /* prompt windows*/
+
+     var score = prompt("Please enter 1-10 on how much you know Math additioin","");
+     if(score >= 5)
+     {
+       alert("Are you ready for answering the questions?");
+     } else
+     {
+       alert("Let's learn together!");
+     }     
+
+  </script>
+
+  
+  <!----Banner section---->
+
+  <section id="banner">
+  <p class="promo-title">Math Addition</p>
+
+<!---- add audio as a background music---->
+<div>
+
+
+   <audio src="media\audio.mp3" id="audio" loop="loop"></audio>
+
+  <script type="text/javascript">
+    setTimeout(function(){
+      document.getElementById("audio").play();
+     }, 8000)
+
+    var audio = document.getElementById('audio');
+    var playPauseBTN = document.getElementById('playPauseBTN');
+    var count= 0;
+
+    function playPause(){
+    if(count == 0){
+        count = 1;
+        audio.play();
+        playPauseBTN.innerHTML = "Pause &#9208;";
+    }else{
+        count = 0;
+        audio.pause();
+        playPauseBTN.innerHTML = "Pause &#9658;";
+    }
+}
+  </script>
+
+   
+   
+   <button style="float: right" id="playPauseBTN" onclick="playPause()">Stop &#9611;</button>
+   &nbsp;   
+   &nbsp;
+   <button style="float: right" id="playPauseBTN" onclick="playPause()">Play &#9658;</button>
+</div>
+
+  </div>
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+  <!------Card hover effects---->
+
+  <div class="wrapper">
+    <div class="card">
+        <img src="images/mufin.jpg">
+        <div class="info">
+          <h1>Question1</h1>
+          <p style="font-size: 20px">Susan has 3 blueberry muffins and 4 chocolate chip cookies. How many muffins and cookies does Susan have altogether?</p>
+        </div>
+     </div>
+  
+         <br></br> 
+
+    <div class="card">
+        <img src="images/orange.jpg">
+        <div class="info">
+          <h1>Question2</h1>
+          <p style="font-size: 20px">Sam bought some fruits. There are 5 apples, 7 oranges, and 6 pears. How many fruits did Sam buy altogether?</p>
+        </div>
+     </div>
+
+
+    <div class="card">
+        <img src="images/book.jpg">
+        <div class="info">
+          <h1>Question3</h1>
+          <p style="font-size: 20px">Sally has 8 books. John has 3 more books than Sally. How many books do both children have altogether?</p>
+        </div>
+     </div>
+
+
+  <!-----Create a box to contain answer checking section----->
+
+  <div id="answerbox">
+
+
+  <!-----check answers----->
+
+   
+
+   <script language="javascript" type="text/javascript">
+
+   function myFunction1()
+       {
+        var a=document.getElementById("text_a").value;
+        if (a=="7")
+       {  
+        document.getElementById("answer1").innerText="You are correct!";
+       }
+        else
+       {
+        document.getElementById("answer1").innerHTML="Try again.";
+       }
+     }
+
+     function myFunction2()
+     {
+       var b=document.getElementById("text_b").value;
+       if (b=="18")
+      {
+       document.getElementById("answer2").innerText="You are correct!";
+      }
+       else
+      {
+       document.getElementById("answer2").innerHTML="Try again.";
+       }
+     }
+
+
+
+    function myFunction3()
+    {
+      var c=document.getElementById("text_c").value;
+      if (c=="19")
+     {
+      document.getElementById("answer3").innerText="You are correct!";
+     }
+      else
+     {
+       document.getElementById("answer3").innerHTML="Try again.";
+     }
+    }
+
+
+  
+</script>
+
+   <h1 style="color: #2952a3; opacity: 0.8">Think about these questions and try to answer in the blank.</h1>
+  <br></br>
+     
+     <h2>Question1</h2>
+            <input id="text_a" type="text" />
+            <button class="button button1" onclick = "myFunction1()">Check!</button>
+            <p id="answer1"></p>
+
+     <h2>Question2</h2>
+             <input id="text_b" type="text"/>
+             <button class="button button1" onclick = "myFunction2()">Check!</button>
+             <p id="answer2"></p>
+
+     
+     <h2>Question3</h2>
+            <input id="text_c" type="text"/>
+            <button class="button button1" onclick = "myFunction3()">Check!</button>
+            <p id="answer3"></p>
+
+
+</div>
+
+  <!------Create a footer----->
+
+  <div id="footer">
+           Copyright 2021, Mu-Jung Shang
+  </div>
+
+
+</body>
+
+</html>
+

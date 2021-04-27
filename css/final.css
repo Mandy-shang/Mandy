@@ -1,0 +1,187 @@
+
+/* Create a banner for the web title */
+#banner{
+   height: 250px;
+   background-size: cover;
+   background-position: auto;
+   background-repeat: no-repeat;
+   background-image: url(https://i.pinimg.com/564x/3c/1e/62/3c1e6253826f6a009b2a02559b800753.jpg);
+   padding-top: 5%;
+   opacity: 0.8;
+  }
+
+/* Create button to play music*/
+button{
+    margin: 20px;
+    padding: 8px 18px;
+    font-size: 22px;
+    line-height: 40px;
+    min-width: 150px;
+    cursor: pointer;
+    background: liner-gradient(to right bottom,#273c75,#079992);
+    color: #fff;
+    border-radius: 5px;
+    border: 0px;
+    height: 60px;
+}
+
+
+
+/* words in the card */
+.promo-title{
+   font-family: 'Coda Caption', sans-serif;
+   font-size: 100px;
+   font-weight: bold;
+   color: #334d00;
+   margin-top: 50px;
+   text-align: center;
+  }
+
+/*code modify from https://www.youtube.com/watch?v=6-QoF1qY9Bw */
+*{
+   box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+ }
+
+html, body{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   background: #ebebe0;
+ }
+
+
+.wrapper{
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+}
+
+.card{
+   width: 280px;
+   height: 360px;
+   padding: 2rem 1rem;
+   background: #fff;
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+   box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+   transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+   transform: translateY(20px);
+}
+
+.card:before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left:0;
+   display: block;
+   width: 100%;
+   height:100%;
+   background: linear-gradient(to bottom, rgba(0,176,155,0.5),rgba(150,201,61,1));
+   z-index: 2;
+   transition: 0.5s all;
+   opacity: 0;
+}
+
+.card:hover:before{
+   opacity: 1;
+}
+
+.card img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.card .info{
+   position: relative;
+   z-index: 3;
+   color: #fff;
+   opacity: 0;
+   transform: translateY(30px);
+   transition: 0.5 all;
+}
+
+.card:hover .info{
+   opacity: 1;
+   transform: translateY(0px);
+}
+
+.card .info h1{
+   margin: 0;
+}
+
+.card .info p{
+   letter-spacing: 1px;
+   font-size: 15px;
+   margin-top: 8px;
+   margin-bottom: 20px;
+}
+
+
+/* Style the box for the answer checking section*/
+#answerbox {
+    position: absolute; 
+    left: 240px;
+    top: 820px;
+    width: 840px;
+    height: 700px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    background-color: #d7d7c1;
+    text-align: center;
+}
+
+h2{
+    color: #77773c;
+}
+
+/* Style button*/
+.button {
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+.button1 {
+   background-color: #006666;
+   color: #b3b3b3;
+   border: 2px solid #e7e7e7;
+}
+
+.button1:hover {
+   background-color: #e7e7e7;
+}
+
+#footer {
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    bottom: 0px;
+    font-family: arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
